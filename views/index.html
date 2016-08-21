@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ตัวอย่างการเขียน Full stack JavaScript อย่างง่าย</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="/result" method="GET" onsubmit="return chk_form()">
+            <div class="form-group">
+                <div class="radio">
+                    <label>
+    <input type="radio" name="order" id="order" value="1" checked>
+    1.หาค่าเฉลี่ย
+  </label>
+                </div>
+                <div class="radio">
+                    <label>
+    <input type="radio" name="order" id="order" value="2">
+    2.หาค่ามัธยฐาน
+  </label>
+                </div>
+                <div class="radio">
+                    <label>
+    <input type="radio" name="order" id="order" value="3">
+    3.หาผลรวมทั้งหมด
+  </label>
+                </div>
+                <label>กรุณากรอกตัวเลขโดย 1 ตัวต่อ 1 ลูกนํ้า</label>
+                <input type="text" class="form-control" name="inputnumber" placeholder="ตัวอย่าง 1,2,3,11,100,1000,10000"><br>
+                <button class="btn btn-primary" type="submit" />ส่งข้อมูล</button>
+            </div>
+    </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
